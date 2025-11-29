@@ -1,0 +1,51 @@
+<!--make the music player index -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MusicPlayer — Home</title>
+  <link rel="stylesheet" href="musicstyle.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="musicindex.html">Home</a>
+    <a href="song.html">Suggestions</a>
+    <a href="musiccontact.html">My Saved</a>
+  </nav>
+
+  <main class="container">
+    <h1>MusicPlayer</h1>
+    <p>Tell us about your mood/type and we'll suggest songs.</p>
+
+    <form id="prefForm" class="card">
+      <label>
+        Name (required)
+        <input type="text" id="name" required />
+      </label>
+
+      <label>
+        Email (required)
+        <input type="email" id="email" required />
+      </label>
+
+      <label>
+        Pick your mood/type
+        <select id="mood">
+          <option value="">-- choose mood --</option>
+          <option value="chill">Chill</option>
+          <option value="workout">Workout</option>
+          <option value="party">Party</option>
+          <option value="focus">Focus</option>
+        </select>
+      </label>
+
+      <button type="submit" id="savePref">Save & Get Suggestions</button>
+    </form>
+
+    <section id="notice" class="card hidden"></section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
